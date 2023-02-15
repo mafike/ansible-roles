@@ -1,0 +1,8 @@
+---
+- name: copy index.html
+  copy:
+    src: index.html
+    dest: /var/www/html/indext.html
+  notify:
+    Restart apache2
+...    
